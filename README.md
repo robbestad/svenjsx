@@ -3,7 +3,8 @@
 SVENJSX is a support tool for [Svenjs](https:/github.com/svenanders/svenjs). It allows you to write JSX syntax in your _render_ code, like this:
 
 ```html
-var clickyComponent = Svenjs.createComponent({
+var Sven = require("svenjs");
+var clickyComponent = Sven.create({
     initialState: {
         clicks: 0
     },
