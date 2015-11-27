@@ -1,0 +1,69 @@
+{
+  "name": "svenjsx",
+  "version": "0.1.4",
+  "description": "JSX for Svenjs",
+  "main": "main.js",
+  "devDependencies": {
+    "commoner": "^0.10.0",
+    "jstransform": "^11.0.3",
+    "webpack": "^1.10.5",
+    "gulp": "^3.8.11",
+    "gulp-plumber": "^1.0.0",
+    "gulp-util": "^3.0.4",
+    "tape": "^4.0.0",
+    "through2": "^0.6.5"
+  },
+  "keywords": [
+    "jsx",
+    "svenjsx",
+    "svenjs"
+  ],
+  "author": {
+    "name": "Sven A Robbestad",
+    "email": "robbestad@gmail.com",
+    "url": "https://github.com/svenanders"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/svenanders/svenjsx.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "scripts": {
+    "test": "node test/tests.js"
+  },
+  "bin": {
+    "svenjsx": "./bin/svenjsx"
+  },
+  "gitHead": "5106fe33c32163a3e0ecaeec4c9cc247191494fc",
+  "bugs": {
+    "url": "https://github.com/svenanders/svenjsx/issues"
+  },
+  "homepage": "https://github.com/svenanders/svenjsx#readme",
+  "_id": "svenjsx@0.1.4",
+  "_shasum": "edcf1179ff9df655eaca262e03006c1c79e27738",
+  "_from": "svenjsx@>=0.1.0 <0.2.0",
+  "_npmVersion": "2.13.2",
+  "_nodeVersion": "0.12.2",
+  "_npmUser": {
+    "name": "svenanders",
+    "email": "anders@robbestad.com"
+  },
+  "maintainers": [
+    {
+      "name": "svenanders",
+      "email": "anders@robbestad.com"
+    }
+  ],
+  "dist": {
+    "shasum": "edcf1179ff9df655eaca262e03006c1c79e27738",
+    "tarball": "http://registry.npmjs.org/svenjsx/-/svenjsx-0.1.4.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/svenjsx/-/svenjsx-0.1.4.tgz",
+  "readme": "ERROR: No README data found!"
+}
