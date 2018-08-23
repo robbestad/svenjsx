@@ -1,40 +1,22 @@
 'use strict';
 
 var webpack = require('webpack');
-
+var path = require("path");
 var plugins = [
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
   }),
-  new webpack.optimize.OccurenceOrderPlugin()
 ];
 
-if (process.env.NODE_ENV === 'production') {
-  plugins.push(
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        screw_ie8: true,
-        warnings: false
-      }
-    })
-  );
-}
-
 module.exports = {
-  module: {
-    preLoaders: [
-      { test: /\.js$/, loaders: ['svenjsx-loader'], exclude: /node_modules/ }
-    ],
-    loaders: [
-      { test: /\.js$/, loaders: ['babel-loader'], exclude: /node_modules/ }
-    ]
-  },
+  mode: "production",
+  entry: "./main.js",
   output: {
-    library: 'Svenjs',
+    path: path.resolve(__dirname,"dist"),
     libraryTarget: 'umd'
   },
   plugins: plugins,
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['.js']
   }
 };

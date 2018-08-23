@@ -2,7 +2,7 @@
 // -*- mode: js -*-
 'use strict';
 
-var transform = require('../main').transform;
+var transform = require('../main.js').transform;
 
 require('commoner').version(
   require('../package.json').version

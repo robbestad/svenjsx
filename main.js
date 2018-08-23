@@ -8,11 +8,13 @@
  */
 
 'use strict';
+
 /*eslint-disable no-undef*/
 var visitors = require('./vendor/fbtransform/visitors');
 var transform = require('jstransform').transform;
 var typesSyntax = require('jstransform/visitors/type-syntax');
 var inlineSourceMap = require('./vendor/inline-source-map');
+
 
 var visitReactTag = require('./vendor/fbtransform/transforms/react').visitorList[0];
 
@@ -78,9 +80,8 @@ function processOptions(opts) {
   options.filename = opts.sourceFilename;
   options.precompile = opts.precompile;
 
-  if (opts.es6module) {
-    options.sourceType = 'module';
-  }
+  options.sourceType = 'module';
+
   if (opts.nonStrictEs6module) {
     options.sourceType = 'nonStrictModule';
   }
